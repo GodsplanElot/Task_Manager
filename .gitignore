@@ -1,0 +1,87 @@
+# Python
+*.py[cod]
+*$py.class
+__pycache__/
+.pytest_cache/
+.python-version
+
+# Virtualenvs
+env/
+venv/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Packaging
+build/
+develop-eggs/
+dist/
+eggs/
+parts/
+sdist/
+*.egg-info/
+.installed.cfg
+*.egg
+*.whl
+wheelhouse/
+
+# C extensions / compiled
+*.so
+
+# Type checkers / caches
+.mypy_cache/
+.pyre/
+
+# Test / coverage
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+
+# Django
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+media/
+staticfiles/
+# note: keep migrations/ committed unless you intentionally want to ignore them
+
+# Node / React
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnp.*
+.pnp.js
+# build directories
+build/
+dist/
+.tmp/
+.cache/
+.eslintcache
+
+# Environment files
+.env
+.env.*.local
+
+# Editors/IDEs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Misc
+logs/
+*.log
+*.swp
+*~
