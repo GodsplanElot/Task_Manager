@@ -38,6 +38,7 @@ function Form({route, method}) {
         <input 
             className="form-input"
             type="text"
+            required
             value={username}
             onChange={(e)=> setUsername(e.target.value)}
             placeholder="Username"
@@ -45,6 +46,7 @@ function Form({route, method}) {
         <input 
             className="form-input"
             type="password"
+            required
             value={password}
             onChange={(e)=> setPassword(e.target.value)}
             placeholder="Password"
