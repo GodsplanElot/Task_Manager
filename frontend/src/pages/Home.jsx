@@ -6,11 +6,33 @@ function Home() {
   const [content, setContent] = useState("");
   const [title, setTitle] = useState("");
 
-  const getNote = () => {
+  useEffect(() => {
+    getNotes();
+  }, []);
+
+  const getNotes = () => {
     api
       .get("/api/notes/")
       .then((res) => res.data)
-      .then((data) => setNotes(data)).catch((err) => alert(err))
+      .then((data) => {
+        setNotes(data);
+        console.log(data);
+      })
+      .catch((err) => alert(err));
+  };
+
+  const deleteNote = (id) => {
+    api
+      .delete(`/api/notes/delete/${id}/`)
+      .then((res) => {
+        if (res.status === 204) {
+          alert("Note deleted ☣⚡");
+        } else {
+          alert("Failed to delete note.");
+        }
+      })
+      .catch((error) => alert(error));
+    getNotes();
   };
 
   return <div>Home</div>;
