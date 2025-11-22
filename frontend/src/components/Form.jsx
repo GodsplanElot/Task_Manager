@@ -56,3 +56,5 @@ function Form({route, method}) {
 
     </form>
 }
+
+export default Form
