@@ -51,6 +51,8 @@ function Home() {
     <div>
       <div>
         <h2>Notes</h2>
+        {notes.map((note) => <Note note={note} onDelete={deleteNote} key={note.id} />)}
+
         <h2>Create a Note</h2>
         <form onSubmit={createNote}>
           <label htmlFor="title">Title:</label>
